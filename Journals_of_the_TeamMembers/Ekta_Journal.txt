@@ -1,0 +1,21 @@
+Design Pattern: Composite Pattern
+
+XP Value: Respect
+
+Week 1: I'll make sure every team member's suggestions and ideas are taken into consideration.
+
+Every team member should be on the same page when a decision is made in order to avoid conflicts. 
+
+For instance, team members came with different game engines and stories to implement the project and everyone's story was considered fairly. This way, the team was enthusiastically involved in the project. Later, on every member's approval, came on a common decision to use Unity3D game engine for game development.
+
+Also, there was an active participation of all members in how to manage the git repository and what communication channels would be used. Every member’s idea was respected and on every member’s approval, came up with the best and manageable solutions.
+
+When meetings were scheduled, it was very well communicated to every team member and they respected each other’s time by being punctual in all the meetings. At last, considering every member’s idea, I came up with a consolidated list of user stories and game ideas for our group project.
+
+I’ll advocate this value throughout the lifecycle of this project and make sure the members are treated respectfully in the team.
+
+
+
+Waffle.io : https://waffle.io/CMPE202-TEAM03-SPRING16/GameWithDesignPattern
+
+Git: https://github.com/CMPE202-TEAM03-SPRING16/GameWithDesignPattern
