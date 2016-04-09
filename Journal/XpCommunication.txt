@@ -1,0 +1,3 @@
+Xp-Value:Communication
+We have selected slack as our project communication channel.
+In the first week using slack,the team communicated and decided upon the project ideas.In the second meeting our team decided upon the game engine to be used.All the members of our team were interactive and everyone reprensented their ideas.After taking every member's point into consideration,our team decided to go with Unity3D game engine. 
