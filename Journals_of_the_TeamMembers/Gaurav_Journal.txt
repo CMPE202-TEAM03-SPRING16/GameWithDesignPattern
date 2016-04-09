@@ -1,0 +1,20 @@
+﻿# XP VALUE: COURAGE
+# Journal Entry:
+ I will advocate the “Courage” value of XP throughout the life cycle of the project.
+>	In week 1, I observed several incidents when our team faced such conditions that required "Courage" for decision making.
+E.g. In the first team meeting, we were listing down the options for the game engine/environment to be used for the game we are going to build. Several options were discussed like Greenfoot, JMonkey and Unity3D. 
+Now, there were pros and cons for all the options such as everybody had worked on Greenfoot for the lab implementations in the class. So, everyone was comfortable with the Greenfoot.
+But, Unity3D is way better game engine than Greenfoot. It provides beautiful user interface and other game environment support. Unity3D is one of the standard game engines used for game development in the industry. Also, it would be better for the team members to have “Game Developed in Unity3D” on resume or linkedin profile will have a positive effect on the employers from gaming industry.
+All these positive points on Unity3D made the team decide to use Unity3D though it will be a new technology for everyone to learn and would put the project timeline in jeopardy. 
+This incident shows courage of choosing a tough and threatening, but better way to do something over an easier one.
+
+
+
+#Tasks Assigned:
+1. Task 2: Find available game engine options:
+	--> I researched on different availble game engines.
+	--> Analysed pros and cons of different game engines.
+	--> Analysed the difficulty level to learn perticular technology.
+	--> Presented the team with my analysis.
+
+
