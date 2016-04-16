@@ -4,3 +4,10 @@ XP Core value - Feedback
 Link to Waffle.io Board - https://waffle.io/CMPE202-TEAM03-SPRING16/GameWithDesignPattern
 Link to Github -  https://github.com/CMPE202-TEAM03-SPRING16/GameWithDesignPattern
 Observation - I will adovate the feedback value of XP for the life cycle of team project. In the past entire week, It is our setup phase, where we started with a new team, So getting feedback is important on team issues. For the project Code quality is really very important, so in order to achieve that code quality, getting a peer review or feedback on the code being committed is really very important to keep coding standards maintained in project. Explained all the teammates about the pull request feature of GitHub and asked to follow a process where coder will not merge the code and will assign the pull request to any other team mate who will provide feedback on the code being committed, explained them the importance of peer code review and getting feedback on code so that team code quality will improve. We divided the different game engines to the different team members and encouraged all team members to provide feedback on individual game engine so that everyone would come up with different positives and negatives of game engines and when we met we disscussed them with the team and provided feedback on those to team.
+
+Week-2
+Design Pattern -  Command
+XP Core value - Feedback
+Link to Waffle.io Board - https://waffle.io/CMPE202-TEAM03-SPRING16/GameWithDesignPattern
+Link to Github -  https://github.com/CMPE202-TEAM03-SPRING16/GameWithDesignPattern
+Observation:First week was dedicated for collecting various assets and building the basic structure of our game.I made sure that each member of my team gave time  to time feedback of their progress and hurdles. We even had feasibilty talk regarding on the topic we have decided, where all the team members were encouraged to provide their feedback. Made sure all creates pull requests and asked teammates to follow the same practice.
