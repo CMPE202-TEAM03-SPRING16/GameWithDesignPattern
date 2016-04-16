@@ -1,3 +1,4 @@
+#Week 1
 Design Pattern: Composite Pattern
 
 XP Value: Respect
@@ -14,6 +15,12 @@ When meetings were scheduled, it was very well communicated to every team member
 
 I’ll advocate this value throughout the lifecycle of this project and make sure the members are treated respectfully in the team.
 
+#Week 2
+XP Value : Respect
+Design Pattern : Composite
+2nd week was based on research and finalizing upon the project ideas. I had made sure that the idea of each team member was considered before coming upon the final decision and that all the tasks were equally distributed between the members of team.
+
+Tasks: Created an initial scene for the game which included background, lighting and the main character.
 
 
 Waffle.io : https://waffle.io/CMPE202-TEAM03-SPRING16/GameWithDesignPattern
