@@ -1,4 +1,6 @@
-﻿# XP VALUE: COURAGE
+Entry #1 <April 9, 2016>
+
+# XP VALUE: COURAGE
 # Journal Entry:
  I will advocate the “Courage” value of XP throughout the life cycle of the project.
 >	In week 1, I observed several incidents when our team faced such conditions that required "Courage" for decision making.
@@ -16,5 +18,11 @@ This incident shows courage of choosing a tough and threatening, but better way 
 	--> Analysed pros and cons of different game engines.
 	--> Analysed the difficulty level to learn perticular technology.
 	--> Presented the team with my analysis.
+======================================================================================================================================
 
+Entry #2 <April 16, 2016>
 
+# XP VALUE: COURAGE
+# Journal Entry:
+
+>	In week 2, We started learning Unity3D on official tutorials and also started implementing the what we learned in our game. During this process, a couple of team members were not sure about using Unity3D as they found the tutorials to be a bit difficult. Hence, they were afraid that our game will not be finished on time. But, the other members, who were getting a grip on Unity3D, encouraged those who were afraid and boosted them up to work on Unity3D.
