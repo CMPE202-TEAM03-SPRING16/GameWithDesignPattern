@@ -1,10 +1,14 @@
+Entry #1 <April 9, 2016>
 XP Value = Simplycity
 =====================
-
 When my team started the project, every member in team discussing project ideas and I make sure to keep those ideas very simple. We will make sure that the tools we use for developing is easy to understand and user friendly. We will try to make all members' implementation simple and easily understandable to other members and audience. We will focus only on what is asked for; not out of the focus work which make overall implementation very complex. We will adopt small and simple steps while doing any particular task so that we can ignore the failure at early stages. We have planned to separate mandatory functionalities and extra functionalities. So, we can complete important and mandatory tasks by deadline. A simple design with very simple code could be easily understood by most programmers in the team. At meeting of team members in requirements phase, some members’ suggestions are too complex and out of focus. After reviewing their ideas, I decided to make them very simple upon everyone’s agreement and extract some idea for future after completing mandatory goals.
-
 
 Task = Research on Unity 3D game engine
 =======================================
+I have chosen a task of researching Unity3D gaming tool for developing very attractive game using design pattern. I have researched Unity3D on official web site. I have downloaded Unity3D installer for my local system and installed to start exploring. I have started implementing demo program in Unity3D. I’ll refer tutorials and documentation of Unity3D in following week.
 
-I have chosen a task of researching Unity3D gaming tool for developing very attractive game using design pattern. I have researched Unity3D on official web site. I have downloaded Unity3D installer for my local system and installed to start exploring. I have started implementing demo program in Unity3D. I’ll refer tutorials and documentation of Unity3D in following week. 
+
+Entry #2 <April 16, 2016>
+XP Value = Simplycity
+=====================
+During this week, my team focused on researching and collecting resources. I made sure that the ideas we came to conclusion for project implementation were simple. Initially, all memebers made complexity about Unity3D. However, it seemed simple after completing tutorials. 
