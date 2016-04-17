@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Mover : MonoBehaviour {
-
+public class Done_Mover : MonoBehaviour
+{
 	public float speed;
 
 	void Start ()
