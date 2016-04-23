@@ -1,3 +1,21 @@
 Xp-Value:Communication
 We have selected slack as our project communication channel.
 In the first week using slack,the team communicated and decided upon the project ideas.In the second meeting our team decided upon the game engine to be used.All the members of our team were interactive and everyone reprensented their ideas.After taking every member's point into consideration,our team decided to go with Unity3D game engine. 
+
+
+
+Entry #2 <April 16, 2016>
+
+# XP VALUE: COMMUNICATION
+# Journal Entry:
+
+>	Last week was all about setting up the basic structure and gathering various assests required for our game.The task was divided among all the team members.I made sure every team member interacted properly by giving regular updates so that every member remains aware of what other members of the team are working on.
+
+
+
+Entry #3 <April 23, 2016>
+
+# XP VALUE: COMMUNICATION
+# Journal Entry:
+
+>	Last week our team focused completely on game developement.Code developement was divided among all team members.Each team member had a module to handle.I made sure each team member communicated on a regular basis by posting updates on slack,our communication channel.
