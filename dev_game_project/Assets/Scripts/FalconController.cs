@@ -13,17 +13,24 @@ public class FalconController : MonoBehaviour {
 	public Boundary boundary;
 	public float tilt;
 	public GameObject shot;
-	public Transform shotSpawn;
+	public Transform[] shotSpawns;
 	public float fireRate;
 	private float nextFire;
+	public int startingHealth;
+	private int currentHealth = 100;
+
+
+
+
 	void Update ()
 	{
 		if(Input.GetKey(KeyCode.Space) &&  Time.time>nextFire)
 		{
 			nextFire = Time.time + fireRate;
-			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+			foreach (var shotSpawn in shotSpawns) {
+				Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+			}
 
-		
 		}
 	}
 
@@ -43,4 +50,14 @@ public class FalconController : MonoBehaviour {
 
 		GetComponent<Rigidbody>().rotation = Quaternion.Euler (0.0f, 0.0f, GetComponent<Rigidbody>().velocity.x * -tilt);
 	}
+
+	//	public int TakeDamage (int amount)
+	//	{
+	//		// Set the damaged flag so the screen will flash
+	//		currentHealth -= amount;
+	//		Debug.Log ("currentHealth " + currentHealth);
+	//		// Set the health bar's value to the current health.
+	//
+	//		return currentHealth;
+	//	}
 }
