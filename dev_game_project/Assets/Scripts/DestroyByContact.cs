@@ -33,7 +33,7 @@ public class DestroyByContact : MonoBehaviour
 		if (other.tag == "Health") {
 
 			Debug.Log ("Health ++");
-			gameController.AddHealth (20);
+//			gameController.AddHealth (20);
 			Destroy (other.gameObject);
 			Destroy (gameObject);
 		}
@@ -42,7 +42,7 @@ public class DestroyByContact : MonoBehaviour
 			//health = damage.TakeDamage (20);
 			Debug.Log ("Health " + health);
 
-			health = gameController.ReduceHealth (20);
+//			health = gameController.ReduceHealth (20);
 
 			Debug.Log (health == 0);
 			if (health == 0) {
