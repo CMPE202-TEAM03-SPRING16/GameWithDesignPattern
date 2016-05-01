@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class Boundary 
@@ -9,22 +9,49 @@ public class Boundary
 }
 
 public class FalconController : MonoBehaviour {
-	public float speed;
+	public float speed = 10f;
 	public Boundary boundary;
 	public float tilt;
 	public GameObject shot;
-	public Transform shotSpawn;
-	public float fireRate;
+	public Transform[] shotSpawns;
+	private float fireRate = 0.25f;
 	private float nextFire;
+	public int startingHealth;
+	private int currentHealth = 100;
+	private SpeedManager speedManager;
+	private float curTime = 0f;
+
+
+	void Start(){
+		//speedManager = new SpeedManager (this);
+		InvokeRepeating ("ScoreInc", 1f, 1f);
+
+	}
+
 	void Update ()
 	{
 		if(Input.GetKey(KeyCode.Space) &&  Time.time>nextFire)
 		{
-			nextFire = Time.time + fireRate;
-			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-
-		
+			Debug.Log ("FR --- "+this.fireRate);
+			nextFire = Time.time + this.fireRate;
+			Debug.Log ("Next Fire " + nextFire);
+			foreach (var shotSpawn in shotSpawns) {
+				Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+			}
 		}
+	}
+
+	public void setFireRate(float fireRate)
+	{ 
+		Debug.Log ("Fire Rate set ");
+		this.fireRate = fireRate;
+		Debug.Log (fireRate);
+	}
+
+	public float getFireRate()
+	{
+		Debug.Log ("Fire Rate Updated " + this.fireRate);
+		return this.fireRate;
 	}
 
 	void FixedUpdate ()
@@ -33,7 +60,7 @@ public class FalconController : MonoBehaviour {
 		float moveVertical = Input.GetAxis ("Vertical");
 
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
-		GetComponent<Rigidbody>().velocity = movement * speed;
+		GetComponent<Rigidbody> ().velocity = movement * speed;
 
 		GetComponent<Rigidbody> ().position = new Vector3 (
 			Mathf.Clamp (GetComponent<Rigidbody> ().position.x, boundary.xMin, boundary.xMax), 
