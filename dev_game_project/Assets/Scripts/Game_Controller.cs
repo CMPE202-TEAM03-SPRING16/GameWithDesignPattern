@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Game_Controller : MonoBehaviour {
 	public GameObject[] hazards;
@@ -12,6 +13,8 @@ public class Game_Controller : MonoBehaviour {
 	public GUIText healthText;
 	private int currentHealth; 
 	public ScoreObserver scoreTracker;
+	public GUIText gameOver;
+	private EnemyFactory enemyFactory;
 
 	void Start () {
 		currentHealth = 100;
@@ -23,14 +26,15 @@ public class Game_Controller : MonoBehaviour {
 
 	IEnumerator SpawnWaves ()
 	{
-		
+			enemyFactory = new EnemyFactory ();
 			yield return new WaitForSeconds (startWait);
 			while (true) {
 			foreach (var hazard in hazards) {
 				for (int i = 0; i < hazardCount; i++) {
 					Quaternion spawnRotation = Quaternion.identity;
 					Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
-					Instantiate (hazard, spawnPosition, spawnRotation);
+					enemyFactory.getEnemyShip (hazard, spawnPosition, spawnRotation);
+					//Instantiate (hazard, spawnPosition, spawnRotation);
 					yield return new WaitForSeconds (spawnWait);
 				}
 			}
@@ -42,7 +46,10 @@ public class Game_Controller : MonoBehaviour {
 		
 		Debug.Log ("scoreTracker"+scoreTracker);
 		//scoreTracker.updatePoints (newScoreValue);
-		score += newScoreValue;
+		if (score < 100) {
+			Debug.Log ("Update ");
+			score += newScoreValue;
+		}
 		UpdateScore ();
 	}
 
@@ -61,21 +68,32 @@ public class Game_Controller : MonoBehaviour {
 	public int ReduceHealth (int amount)
 	{
 		// Set the damaged flag so the screen will flash
-		currentHealth -= amount;
-		Debug.Log ("currentHealth " + currentHealth);
-		// Set the health bar's value to the current health.
-		UpdateHealth(currentHealth);
-		return currentHealth;
+		if (currentHealth > 0) {
+			currentHealth -= amount;
+			Debug.Log ("currentHealth " + currentHealth);
+			// Set the health bar's value to the current health.
+			UpdateHealth (currentHealth);
+			return currentHealth;
+		} else {
+			
+			gameIsOver ();
+			return currentHealth;
+		}
 	}
 
 	public void AddHealth (int amount)
 	{
 		// Set the damaged flag so the screen will flash
+
 		currentHealth += amount;
-		Debug.Log ("currentHealth " + currentHealth);
+		Debug.Log ("Update " + currentHealth);
 		// Set the health bar's value to the current health.
 		UpdateHealth(currentHealth);
 
+	
+	public void gameIsOver ()
+	{
+		gameOver.text = "Game Over";
 	}
 }
 
