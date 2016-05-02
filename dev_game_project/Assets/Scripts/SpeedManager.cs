@@ -2,7 +2,6 @@
 
 	public class SpeedManager
 	{
-
 		private Mover character;
 		SpeedContext speedContext;
 

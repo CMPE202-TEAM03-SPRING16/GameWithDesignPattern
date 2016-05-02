@@ -2,7 +2,6 @@
 
 	public class SpeedContext
 	{
-
 		private ISpeedStrategy strategy;
 
 		public SpeedContext (ISpeedStrategy strategy)
@@ -13,7 +12,5 @@
 		public void executeStrategy(Mover character, int speed){
 			strategy.SetSpeed (character, speed);
 		}
-
-
 	}
 	
